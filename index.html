@@ -59,9 +59,9 @@
             document.getElementById('quizPage').style.display = 'none';
             document.getElementById('resultPage').style.display = 'block';
             let resultText = '';
-            if (score >= 8) resultText = 'Congratulations!';
-            else if (score >= 5) resultText = 'Average!';
-            else resultText = 'Better Luck Next Time!';
+            if (score >= 8) resultText = 'Congratulations! You have scored '+score;
+            else if (score >= 5) resultText = 'Average! You have scored '+score;
+            else resultText = 'Better Luck Next Time! You have scored '+score;
             document.getElementById('resultText').innerText = resultText;
         }
     </script>
@@ -69,10 +69,17 @@
 <body onload="loadQuestions()">
     <img src="girl.jpg">
     <div class="container" id="startPage">
-        <button onclick="document.getElementById('startPage').style.display='none';document.getElementById('instructionsPage').style.display='block';">Start Game</button>
+        <button onclick="document.getElementById('startPage').style.display='none';document.getElementById('instructionsPage').style.display='block';">Play Game</button>
     </div>
     <div class="container" id="instructionsPage">
-        <p>Instructions: Answer all 10 questions. Each correct answer gives 1 point. No Negative Questions.</p>
+        <p>Instructions:<br>
+            1. Answer all 10 questions.<br>
+            2. Each correct answer gives 1 point.<br>
+            3. No Negative Markings.<br>
+            4. Participants may not use electronic devices during the quiz.<br>
+            5. You can leave the site only after completing all the 10 questions.<br>
+            "BEST OF LUCK"
+        </p>
         <button onclick="startQuiz()">Start Quiz</button>
     </div>
 
