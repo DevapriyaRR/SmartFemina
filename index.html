@@ -3,6 +3,8 @@
 <head>
     <title>Gaming Quiz</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/wings.png"/>
+
     <script>
         let questions = [];
         let currentQuestionIndex = 0;
@@ -69,6 +71,7 @@
 <body onload="loadQuestions()">
     <img src="girl.jpg">
     <div class="container" id="startPage">
+        <h1>Quiz on the most famous WOMEN of INDIA</h1>
         <button onclick="document.getElementById('startPage').style.display='none';document.getElementById('instructionsPage').style.display='block';">Play Game</button>
     </div>
     <div class="container" id="instructionsPage">
